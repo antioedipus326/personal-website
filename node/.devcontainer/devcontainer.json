@@ -2,18 +2,10 @@
   "name": "Node Devcontainer",
   "dockerComposeFile": ["../../docker-compose.yml"],
   "service": "node-s",
-
-  // Open workspace at /usr/src/app inside the container
   "workspaceFolder": "/usr/src/app",
-
-  // Prevent VS Code from auto-mounting the entire project:
-  // Completely replace the default workspace source
   "mounts": [
-    // Mount only your src directory from host → container
     "type=bind,source=${localWorkspaceFolder}/node/src,target=/usr/src/app/src",
-
   ],
-
   "overrideCommand": false,
 
   "customizations": {
