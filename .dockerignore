@@ -1,0 +1,15 @@
+Dockerfile
+Dockerfile-node
+Dockerfile-httpd
+docker-compose.yml
+.dockerignore
+
+.git
+.gitignore
+
+.env
+
+npm-debug.log
+npm-debug
+
+node-dev

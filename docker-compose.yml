@@ -1,0 +1,23 @@
+services:
+  node-s:
+    container_name: node-c
+    hostname: node-host
+    image: node-i
+    build:
+      context: .
+      dockerfile: node.dockerfile
+    ports:
+      - 3693:3693
+    deploy:
+      resources:
+        limits:
+          memory: 1000M
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./node/src:/usr/src/app/src
+      - node_modules:/usr/src/app/node_modules
+    command: ["npm", "start"]
+
+volumes:
+  node_modules:

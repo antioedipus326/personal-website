@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src/",
+
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "es6", 
+        "target": "es5",  
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+            // src: https://webpack.js.org/guides/typescript/
+
+        "strict": true,
+        "lib": ["DOM", "ESNext"],
+        "esModuleInterop": true,
+        "allowArbitraryExtensions": true,
+        //"verbatimModuleSyntax": true,    
+            // src: https://www.typescriptlang.org/docs/handbook/modules/guides/choosing-compiler-options.html
+
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+            // src: https://webpack.js.org/guides/typescript/
+        "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": true,            
+            // src: https://dev.to/digitalpollution/migrating-a-react-project-from-javascript-to-typescript-an-easy-step-by-step-guide-1hgo
+    },
+    "include": [
+        "./src/**/*",
+    ]
+}
