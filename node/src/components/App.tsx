@@ -1,4 +1,3 @@
-// to do: set explicit return type
 function App (): React.JSX.Element {
     return (
         <>
@@ -6,3 +5,5 @@ function App (): React.JSX.Element {
         </>
     )
 }
+
+export default App
