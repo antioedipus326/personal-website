@@ -18,7 +18,8 @@
     "start": "npx webpack serve --config webpack.config.js",
     "npm-list": "npm list",
     "webpack-prod": "npx webpack --mode production",
-    "webpack-dev": "npx webpack-dev-server --mode development --open --hot"
+    "webpack-dev": "npx webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@types/react": "^19.2.13",

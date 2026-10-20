@@ -1,14 +1,13 @@
 {
     "compilerOptions": {
-        "baseUrl": "./src/",
-
+        "rootDir": "./",
         "outDir": "./dist/",
         "noImplicitAny": true,
-        "module": "es6", 
-        "target": "es5",  
+        "module": "Node16", 
+        "target": "es2025",  
         "jsx": "react-jsx",
         "allowJs": true,
-        "moduleResolution": "node",
+        "moduleResolution": "node16",
             // src: https://webpack.js.org/guides/typescript/
 
         "strict": true,
