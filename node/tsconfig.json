@@ -4,7 +4,7 @@
         "outDir": "./dist/",
         "noImplicitAny": true,
         "module": "Node16", 
-        "target": "es2025",  
+        "target": "esnext",  
         "jsx": "react-jsx",
         "allowJs": true,
         "moduleResolution": "node16",
