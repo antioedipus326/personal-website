@@ -1,5 +1,3 @@
-import { ReactNode } from 'react'
-
 /**
  * Defines the application's theme mode.
  */
@@ -13,14 +11,3 @@ export interface ColorModeContextProps {
   mode: ThemeMode;
   toggleColorMode: () => void;
 }
-
-/**
- * Defines the structure for a card item in the tree.
- */
-export type Card = {
-  cardID: number;
-  isCollapsible: boolean;
-  CollapsedChildren?: number[];
-  PrimaryTypography: ReactNode;
-  CollapsedTypography?: ReactNode;
-};

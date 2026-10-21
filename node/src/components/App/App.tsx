@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Divider, IconButton, Link, Tooltip, Typography } from '@mui/material'
+import { Box, Container, IconButton, Link, Tooltip, Typography } from '@mui/material'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import { useColorMode } from '../../context/color-mode-context'
@@ -70,52 +70,52 @@ function App(): React.JSX.Element {
           <Work title="Learning Happens Everywhere: An Emergent Narrative of Experiential Learning" >(Nov 1, 2018) American Society for Engineering Education, <ExternalLink href="https://www.aee.org/seer">Symposium of Experiential Education Research</ExternalLink>.</Work>
           <Work title="Genre Repertoires in a Changing Industry: Documentation in a New England Textile Mill">(Mar 1, 2018) <ExternalLink href="https://americanethnologist.org/meetings/spring-conference/aes-2018-resemblance/">American Ethnological Society Spring Conference</ExternalLink>.</Work>
 
-<Box
-  sx={{
-    display: 'grid',
-    gridTemplateColumns: { xs: '1fr', sm: 'minmax(0, 1fr) auto' },
-    columnGap: { sm: 3 },
-    rowGap: 2,
-    alignItems: 'start',
-  }}
->
-  <Box>
-    <Typography component="h2" variant="h2" sx={{ mb: 1 }}>
-      Contact Adam
-    </Typography>
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: { xs: '1fr', sm: 'minmax(0, 1fr) auto' },
+              columnGap: { sm: 3 },
+              rowGap: 2,
+              alignItems: 'start',
+            }}
+          >
+            <Box>
+              <Typography component="h2" variant="h2" sx={{ mb: 1 }}>
+                Contact Adam
+              </Typography>
 
-    <Typography variant="body1">
-      <ExternalLink href="https://www.linkedin.com/in/adam-coppola/">
-        Contact Adam on LinkedIn
-      </ExternalLink>{' '}
-      with assignments, tips, requests, and conversations. 
-    </Typography>
-    
-    <Typography variant="body1">
-      Freelance quotes are
-      available on request.
-    </Typography>
-  </Box>
+              <Typography variant="body1">
+                <ExternalLink href="https://www.linkedin.com/in/adam-coppola/">
+                  Contact Adam on LinkedIn
+                </ExternalLink>{' '}
+                with assignments, tips, requests, and conversations. 
+              </Typography>
+              
+              <Typography variant="body1">
+                Freelance quotes are
+                available on request.
+              </Typography>
+            </Box>
 
-  <Box
-    component="img"
-    src="./img/photo-1.jpeg"
-    alt="Adam Coppola"
-    sx={{
-      display: 'block',
-      width: { xs: '100%', sm: 128 },
-      height: 'auto',
-      maxWidth: '100%',
-      borderRadius: '10%',
-      border: '1px solid',
-      borderColor: 'divider',
-      boxShadow: (theme) =>
-        theme.palette.mode === 'dark'
-          ? '0 4px 18px rgba(0, 0, 0, 0.45)'
-          : '0 2px 10px rgba(0, 0, 0, 0.14)',
-    }}
-  />
-</Box>
+            <Box
+              component="img"
+              src="./img/photo-1.jpeg"
+              alt="Adam Coppola"
+              sx={{
+                display: 'block',
+                width: { xs: '100%', sm: 128 },
+                height: 'auto',
+                maxWidth: '100%',
+                borderRadius: '10%',
+                border: '1px solid',
+                borderColor: 'divider',
+                boxShadow: (theme) =>
+                  theme.palette.mode === 'dark'
+                    ? '0 4px 18px rgba(0, 0, 0, 0.45)'
+                    : '0 2px 10px rgba(0, 0, 0, 0.14)',
+              }}
+              />
+            </Box>
 
       </Container>
     </Box>

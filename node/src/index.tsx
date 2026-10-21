@@ -4,7 +4,6 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import App from './components/App'
 import { ColorModeProvider, useColorMode } from './context/color-mode-context'
 import { createAppTheme } from './context/theme'
-import './index.css'
 
 const ThemeWrapper: React.FC = () => {
   const { mode } = useColorMode()

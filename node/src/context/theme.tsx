@@ -70,7 +70,7 @@ export const getDesignTokens = (mode: ThemeMode): ThemeOptions => ({
         marginBottom: '1em',
       },
       body1: {
-        maxWidth: 800,
+        maxWidth: 1000,
       }
     },
   shape: {
