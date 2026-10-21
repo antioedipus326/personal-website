@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, IconButton, Link, Tooltip, Typography } from '@mui/material'
+import { Box, Container, IconButton, Link, Tooltip, Divider, Typography } from '@mui/material'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import { useColorMode } from '../../context/color-mode-context'
@@ -34,7 +34,7 @@ function App(): React.JSX.Element {
           
           <Box
             component="img"
-            src="./img/photo-2-crop.jpg"
+            src="./img/photo-2.jpg"
             alt="Adam does a field interview. Belle Isle Marsh, October 2026."
             sx={{
               mb: 4,
@@ -99,7 +99,7 @@ function App(): React.JSX.Element {
             <Box
               component="img"
               src="./img/photo-1.jpeg"
-              alt="Adam Coppola"
+              alt="Adam Coppola headshot. 2026."
               sx={{
                 display: 'block',
                 width: { xs: '100%', sm: 128 },
@@ -114,8 +114,10 @@ function App(): React.JSX.Element {
                     : '0 2px 10px rgba(0, 0, 0, 0.14)',
               }}
               />
-            </Box>
-
+          </Box>
+          <Divider aria-hidden="true" sx={{ mb: 2 }}/> 
+          <Typography component="p" variant="body2">© 2026 Adam Coppola unless otherwise stated.</Typography>
+      
       </Container>
     </Box>
   )
