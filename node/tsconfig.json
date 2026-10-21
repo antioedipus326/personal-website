@@ -25,6 +25,6 @@
             // src: https://dev.to/digitalpollution/migrating-a-react-project-from-javascript-to-typescript-an-easy-step-by-step-guide-1hgo
     },
     "include": [
-        "./src/**/*",
+        "src/**/*",
     ]
 }
