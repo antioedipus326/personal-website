@@ -1,6 +1,8 @@
 // webpack.config.js
-const path = require('path')
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 // const { StatsWriterPlugin } = require('webpack-stats-plugin');
 
@@ -28,8 +30,11 @@ module.exports = (env, argv) => {
           {
           test: /\.(ts|tsx|js|jsx)$/,
             exclude: /(node_modules)/,
-            use: {
-              loader: 'ts-loader',
+            loader: 'esbuild-loader',
+            options: {
+              loader: 'tsx',
+              jsx: 'automatic',
+              target: 'es2020',
             },
           },
           {
@@ -53,6 +58,11 @@ module.exports = (env, argv) => {
         new HtmlWebpackPlugin({
           template: "./src/index.html",
         }),
+        new CopyWebpackPlugin({
+          patterns: [
+            { from: 'public', to: '.',}
+          ],
+        })
         // new BundleAnalyzerPlugin(), // Automatically opens the analysis report after build. 
         //     // src: https://medium.com/@robinviktorsson/complete-guide-to-setting-up-react-with-typescript-and-webpack-2025-141ae1899c0c 
         // new StatsWriterPlugin({

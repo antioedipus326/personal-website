@@ -8,7 +8,7 @@
     extracts updated package.json and package-lock.json, and cleans up.
 
 .EXAMPLE
-    ./update-deps.ps1 -Deps react, react-dom, react-router, react-router-dom, @mui/icons-material, @mui/material,  @emotion/react, @emotion/styled, -DevDeps @types/react, @types/react-dom, eslint, typescript, ts-loader, source-map-loader, style-loader, css-loader, webpack, webpack-cli, webpack-dev-server, html-webpack-plugin, clean-webpack-plugin, webpack-bundle-analyzer, webpack-stats-plugin
+    ./update-deps.ps1 -Deps react, react-dom, react-router, react-router-dom, @mui/icons-material, @mui/material,  @emotion/react, @emotion/styled, -DevDeps @types/react, @types/react-dom, eslint, typescript, esbuild-loader, source-map-loader, style-loader, css-loader, webpack, webpack-cli, webpack-dev-server, html-webpack-plugin, copy-webpack-plugin, clean-webpack-plugin, webpack-bundle-analyzer, webpack-stats-plugin
 #>
 
 [CmdletBinding()]
