@@ -68,9 +68,6 @@ export const getDesignTokens = (mode: ThemeMode): ThemeOptions => ({
         fontSize: '1rem',
         lineHeight: 1,
         marginBottom: '1em',
-      },
-      body1: {
-        maxWidth: 1000,
       }
     },
   shape: {

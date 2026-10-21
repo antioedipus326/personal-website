@@ -8,7 +8,6 @@ const ExternalLink: React.FC<React.ComponentProps<typeof Link>> = (props) => (
   <Link target="_blank" rel="noreferrer" {...props} />
 )
 
-
 const Work: React.FC<{ title: string; children?: React.ReactNode; href?: string }> = ({ title, children, href }) => (
   <Box sx = {{ mb: '1em', pl: { xs: 2, sm: 3 } }}>
     <Typography variant="body1" component="span" sx = {{color: "text.secondary"}}>
@@ -21,7 +20,7 @@ const Work: React.FC<{ title: string; children?: React.ReactNode; href?: string 
 function App(): React.JSX.Element {
   const { mode, toggleColorMode } = useColorMode()
   return (
-    <Box sx={{ py: { xs: 1, sm: 3, md: 6 }, px: { xs: 1, sm: 3, md: 6 }}}>
+    <Box sx={{ mx: 'auto', maxWidth: 900, py: { xs: 1, sm: 3, md: 6 }, px: { xs: 1, sm: 3, md: 6 }}}>
       <Container maxWidth="lg" component="main" sx={{ bgcolor: 'background.paper', px: { xs: 2.5, sm: 5, md: 8 }, py: { xs: 3, sm: 5, md: 7 }, position: 'relative' }}>
           
           <Tooltip title={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}>
