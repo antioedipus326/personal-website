@@ -53,7 +53,8 @@ function App(): React.JSX.Element {
           />
 
           <Typography component="h3" variant="h3">Journalism &amp; Reporting</Typography>
-          <Work title="Arlington committee outlines a multi-family, multi-use zone for Mass Ave" href="#">(2026) Coming soon.</Work>
+          <Work title="At 40, an invaluable Belle Isle Marsh awaits needed boost" href="https://winthroppilot.com/2026/11/09/at-40-an-invaluable-belle-isle-marsh-awaits-needed-boost/">(Nov. 2026) Winthrop Pilot.</Work>
+          <Work title="Town planners hold last publish session on Heights Business District plan" href="https://yourarlington.com/2026/11/heights-business-district-plan-110526/">(Nov. 2026) YourArlington.</Work>
           <Work title="48 Students Enroll in Delta Engineering, Classes to Begin in Temporary Facilities (one-page sample)" href="./pdf/pdf-1.pdf">(August 2026) In Kyiv, Ukraine, Delta Engineering is a new undergrad engineering program teaching human-centered design. </Work>       
           <Work title="Delta Engineering Presents to Deans at Kyiv School of Economics, Application Period Opens (one-page sample)" href="./pdf/pdf-2.pdf">(July 2026) </Work>
           <Work title="KSE Partner-Student Visits Olin College and Heralds the Launch of Delta Engineering (one-page sample)" href="./pdf/pdf-3.pdf">(June 2026) </Work>          
